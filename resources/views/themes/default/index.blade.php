@@ -1,7 +1,7 @@
 @extends('themes.default.layouts')
 
 @section('header')
-    <title>{{ systemConfig('title','Enda Blog') }} -Powered By  {{ systemConfig('subheading','Enda Blog') }}</title>
+    <title>{{ systemConfig('title','Blog') }} -Powered By  {{ systemConfig('subheading','Blog') }}</title>
     <meta name="keywords" content="{{ systemConfig('seo_key') }}" />
     <meta name="description" content="{{ systemConfig('seo_desc') }}">
 @endsection
@@ -11,10 +11,10 @@
     <div class="collection-head">
         <div class="container">
             <div class="collection-title">
-                <h1 class="collection-header">Yuan Chao</h1>
+                <h1 class="collection-header">Yogi Ai</h1>
                 <div class="collection-info">
                     <span class="meta-info">
-                        如果不能成为拯救世界的神，那就堕落到征服世界的魔吧！
+                        The quieter you become, the more you are able to hear.
                     </span>
                 </div>
             </div>
