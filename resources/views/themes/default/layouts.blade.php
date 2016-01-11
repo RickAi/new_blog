@@ -32,7 +32,6 @@
 <body class="home">
 <header class="site-header">
     <div class="container">
-        <h1><a href="/">Blog</a></h1>
         <nav class="site-header-nav" role="navigation">
 
             <a href="/" class=" site-header-nav-item" target="" title="Home">Home</a>
