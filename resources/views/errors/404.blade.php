@@ -11,9 +11,8 @@
     <div id="cover-image" class="image-bg3 animated fadeIn"></div>
     <div class="container welcome-content">
         <div class="middle-text">
-            <h1>哎呀，访问的页面去冥王星旅游去了</h1>
-            <h2>先去看看其它的吧</h2>
-            <a class="btn" href="{{ url('/') }}" title="{{ systemConfig('title','Enda Blog') }}">返回首页</a><br>
+            <h1>The page do not exist!</h1>
+            <a class="btn" href="{{ url('/') }}" title="{{ systemConfig('title','Enda Blog') }}">Back To Home</a><br>
         </div>
     </div>
 </section>

@@ -45,7 +45,7 @@
             @endif
             <form class="demo_search" action="{{url('search/keyword')}}" method="get">
                 <i class="icon_search" id="open"></i>
-                <input class="demo_sinput" type="text" name="keyword" id="search_input" placeholder="输入关键字 回车搜索" />
+                <input class="demo_sinput" type="text" name="keyword" id="search_input" placeholder="Enter the keyword to search." />
             </form>
         </nav>
 
@@ -62,8 +62,8 @@
 <footer class="container">
     <div class="site-footer" role="contentinfo">
         <div class="copyright left mobile-block">
-            © 2015
-            <span >phpyc.com</span>
+            © 2016
+            <span >navyblue.top</span>
             <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
         </div>
 
@@ -72,7 +72,7 @@
                 <a href="javascript:window.scrollTo(0,0)" >TOP</a>
             </li>
         </ul>
-        <a href="https://github.com/yccphp/laravel-5-blog" target="_blank" aria-label="view source code">
+        <a href="https://github.com/YogiAi/new_blog" target="_blank" aria-label="view source code">
             <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
         </a>
 

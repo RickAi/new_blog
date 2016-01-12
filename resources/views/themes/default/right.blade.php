@@ -1,4 +1,4 @@
-<h4>热门文章</h4>
+<h4>Hot articles</h4>
 <section class="repo-card">
     <ul class="boxed-group-inner mini-repo-list">
 
@@ -20,7 +20,7 @@
 
 
 <div class="widget">
-    <h4 class="title">标签云</h4>
+    <h4 class="title">Tags</h4>
     <div class="content tag-cloud">
         @if(!empty($tagList))
             @foreach($tagList as $tag)
@@ -31,7 +31,7 @@
 </div>
 
 
-<h4>友情链接</h4>
+<h4>Friend Links</h4>
 <section class="repo-card">
     <ul class="boxed-group-inner mini-repo-list">
         @if(!empty($linkList))
