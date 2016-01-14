@@ -37,8 +37,8 @@ class EndaPage extends BootstrapThreePresenter implements Presenter
         if ($this->hasPages()) {
             return sprintf(
                 '<ul class="pager">%s %s</ul>',
-                $this->getPreviousButton('<span aria-hidden="true">&larr;</span>上一页'),
-                $this->getNextButton('下一页<span aria-hidden="true">&rarr;</span>')
+                $this->getPreviousButton('<span aria-hidden="true">&larr;</span>Last'),
+                $this->getNextButton('Next<span aria-hidden="true">&rarr;</span>')
             );
         }
 

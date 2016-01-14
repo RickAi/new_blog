@@ -1,7 +1,7 @@
 @extends('themes.default.layouts')
 
 @section('header')
-    <title>搜索{{ $keyword }}_{{ systemConfig('title','Enda Blog') }}-Powered By{{ systemConfig('subheading','Enda Blog') }}</title>
+    <title>Search{{ $keyword }}_{{ systemConfig('title','Enda Blog') }}-Powered By{{ systemConfig('subheading','Enda Blog') }}</title>
     <meta name="keywords" content="{{ systemConfig('seo_key') }}" />
     <meta name="description" content="{{ systemConfig('seo_desc') }}">
 @endsection
@@ -13,9 +13,9 @@
             <div class="collection-title">
                 <h1 class="collection-header">{{ $keyword }}</h1>
             </div>
-            <span class="meta-info">
-                Cool 善于搜索，才能学习更多的东西哦～
-            </span>
+            {{--<span class="meta-info">--}}
+            {{--Cool 善于搜索，才能学习更多的东西哦～--}}
+            {{--</span>--}}
         </div>
     </div>
 </section>
@@ -46,7 +46,7 @@
 
                     <li class="repo-list-item">
                         <h3 class="repo-list-name">
-                            暂时没搜到关于关键字 <span style="color: #f4645f">{{ $keyword }}</span> 的内容，换个关键字试试吧～
+                            No articles about keyword <span style="color: #f4645f">{{ $keyword }}</span> has been found, try with another one!
                         </h3>
                     </li>
                 @endif
