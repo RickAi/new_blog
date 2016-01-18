@@ -11,7 +11,7 @@
     <div class="collection-head">
         <div class="container">
             <div class="collection-title">
-                <h1 class="collection-header"> </h1>
+                <h1 class="collection-header">Yogi Ai</h1>
                 <div class="collection-info">
                     <span class="meta-info">
                         我遵循此道, 直至终结 - Yasuo.
