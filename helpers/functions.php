@@ -130,8 +130,8 @@ if (!function_exists('viewInit')) {
         $links = app('App\Model\Links');
 
 
-        $view->share('hotArticleList', $article::getHotArticle(3));
-        $view->share('tagList', $tags::getHotTags(12));
+        $view->share('hotArticleList', $article::getHotArticle(5));
+        $view->share('tagList', $tags::getHotTags(15));
         $view->share('navList', $nav::getNavigationAll());
         $view->share('linkList', $links::getLinkList());
     }
