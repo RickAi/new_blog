@@ -107,7 +107,7 @@ class Article extends Model
         $page = Input::get('page', 1);
         $cacheName = $page.'_'.$limit;
         if (empty($model = Cache::tags(self::REDIS_ARTICLE_PAGE_TAG)->get(self::REDIS_NEW_ARTICLE_CACHE . $cacheName))) {
-            $model = self::select('updated_at')->orderBy('updated_at', 'DESC')->simplePaginate($limit);
+            $model = self::select('id')->orderBy('id', 'DESC')->simplePaginate($limit);
             Cache::tags(self::REDIS_ARTICLE_PAGE_TAG)->put(self::REDIS_NEW_ARTICLE_CACHE . $cacheName, $model, self::$cacheMinutes);
         }
 
