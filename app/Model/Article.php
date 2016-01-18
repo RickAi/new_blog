@@ -133,7 +133,7 @@ class Article extends Model
 
         $cacheName = $page . '_' . $catId.'_'.$limit;
         if (empty($model = Cache::tags(self::REDIS_ARTICLE_PAGE_TAG)->get(self::REDIS_CATE_ARTICLE_CACHE . $cacheName))) {
-            $model = self::select('id')->where('cate_id', $catId)->orderBy('id', 'desc')->simplePaginate($limit);
+            $model = self::select('id')->where('cate_id', $catId)->orderBy('updated_at', 'desc')->simplePaginate($limit);
             Cache::tags(self::REDIS_ARTICLE_PAGE_TAG)->put(self::REDIS_CATE_ARTICLE_CACHE . $cacheName, $model, self::$cacheMinutes);
         }
 
@@ -159,7 +159,7 @@ class Article extends Model
     {
         $cacheName = $userId.'_'.$limit;
         if (empty($model = Cache::tags(self::REDIS_ARTICLE_PAGE_TAG)->get(self::REDIS_USER_ARTICLE_CACHE . $cacheName))) {
-            $model = self::select('id')->userId($userId)->orderBy('id', 'DESC')->limit($limit)->get();
+            $model = self::select('id')->userId($userId)->orderBy('updated_at', 'DESC')->limit($limit)->get();
             Cache::tags(self::REDIS_ARTICLE_PAGE_TAG)->put(self::REDIS_USER_ARTICLE_CACHE . $cacheName, $model, self::$cacheMinutes);
         }
         $articleList = [];
@@ -205,7 +205,7 @@ class Article extends Model
         $cacheName = $page . '_' . md5($keyword);
 
         if (empty($model = Cache::tags(self::REDIS_ARTICLE_PAGE_TAG)->get(self::REDIS_SEARCH_ARTICLE_CACHE . $cacheName))) {
-            $model = self::select('id')->where('title', 'like', "%$keyword%")->orderBy('id', 'desc')->simplePaginate(10);
+            $model = self::select('id')->where('title', 'like', "%$keyword%")->orderBy('updated_at', 'desc')->simplePaginate(10);
             Cache::tags(self::REDIS_ARTICLE_PAGE_TAG)->put(self::REDIS_SEARCH_ARTICLE_CACHE . $cacheName, $model, self::$cacheMinutes);
         }
 
@@ -226,7 +226,7 @@ class Article extends Model
             $model = self::select('id')->whereRaw(
                 'find_in_set(?, tags)',
                 [$tagId]
-            )->orderBy('id', 'desc')->simplePaginate(10);
+            )->orderBy('updated_at', 'desc')->simplePaginate(10);
 
             Cache::tags(self::REDIS_ARTICLE_PAGE_TAG)->put(self::REDIS_TAG_ARTICLE_CACHE . $tagId, $model, self::$cacheMinutes);
         }

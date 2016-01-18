@@ -27,7 +27,7 @@ class ArticleController extends Controller
     public function index()
     {
         //
-        return backendView('index', ['article' => Article::orderBy('id', 'DESC')->paginate(10)]);
+        return backendView('index', ['article' => Article::orderBy('updated_at', 'DESC')->paginate(10)]);
     }
 
     /**
