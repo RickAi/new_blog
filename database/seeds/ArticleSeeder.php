@@ -48,15 +48,19 @@ class ArticleSeeder extends Seeder
                 }
             }
 
-            \App\Model\Article::create([
-                'title' => $blog_name,
+            $article_id = \App\Model\Article::create([
                 'cate_id' => $article_type_id,
-                'tags' => $article_type_id,
-                'view_numbers' => 0,
-                'body' => $file_content,
                 'user_id' => 1,
+                'title' => $blog_name,
+                'content' => $file_content,
+                'tags' => $article_type_id,
                 'created_at' => $create_time,
                 'updated_at' => $create_time,
+            ])->id;
+
+            \App\Model\ArticleStatus::create([
+                'art_id' => $article_id,
+                'view_number' => 0,
             ]);
         }
     }
