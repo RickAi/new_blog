@@ -64,9 +64,6 @@
                                 {{ $article->user->name }}
                             </a>
                         </h3>
-                        <p>
-                            {!! strip_tags(conversionMarkdown($article->user->desc)) !!}
-                        </p>
                     </div>
                 </div>
                 @include('themes.default.right')

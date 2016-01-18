@@ -11,10 +11,10 @@
     <div class="collection-head">
         <div class="container">
             <div class="collection-title">
-                <h1 class="collection-header">Yogi Ai</h1>
+                <h1 class="collection-header">燃冰非冰</h1>
                 <div class="collection-info">
                     <span class="meta-info">
-                        The quieter you become, the more you are able to hear.
+                        我遵循此道, 直至终结 - Yasuo.
                     </span>
                 </div>
             </div>
