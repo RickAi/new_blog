@@ -8,9 +8,9 @@ use App\Services\Registrar;
 class UserSeeder extends Seeder{
     public function run(){
         $data = [
-            'name' => 'admin',
-            'email' => 'admin@admin.com',
-            'password' =>'123456',
+            'name' => 'cirrus',
+            'email' => 'ciirus@admin.com',
+            'password' =>'admin',
             'desc'=>'管理员'
         ];
         $register = new Registrar();

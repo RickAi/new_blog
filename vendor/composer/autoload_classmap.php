@@ -8,6 +8,8 @@ $baseDir = dirname($vendorDir);
 return array(
     'AddInfoUsersTable' => $baseDir . '/database/migrations/2015_05_25_062537_add_info_users_table.php',
     'AddPicArticleTable' => $baseDir . '/database/migrations/2015_05_13_093653_add_pic_article_table.php',
+    'ArticleSeeder' => $baseDir . '/database/seeds/ArticleSeeder.php',
+    'CategroySeeder' => $baseDir . '/database/seeds/CategroySeeder.php',
     'CreateArticleStatusTable' => $baseDir . '/database/migrations/2015_03_26_102914_create_article_status_table.php',
     'CreateArticleTable' => $baseDir . '/database/migrations/2015_03_26_102905_create_article_table.php',
     'CreateCategoriesTable' => $baseDir . '/database/migrations/2015_03_16_083845_create_categories_table.php',
@@ -463,6 +465,7 @@ return array(
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Resources/stubs/SessionHandlerInterface.php',
     'SystemSeeder' => $baseDir . '/database/seeds/SystemSeeder.php',
+    'TagSeeder' => $baseDir . '/database/seeds/TagSeeder.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
     'UserSeeder' => $baseDir . '/database/seeds/UserSeeder.php',
