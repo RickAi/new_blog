@@ -14,7 +14,7 @@
                 <h1 class="collection-header">Yogi Ai</h1>
                 <div class="collection-info">
                     <span class="meta-info">
-                        我遵循此道, 直至终结 - Yasuo.
+                        我将遵循此道, 直至终结 - Yasuo.
                     </span>
                 </div>
             </div>
