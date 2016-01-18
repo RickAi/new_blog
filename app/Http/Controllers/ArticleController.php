@@ -21,7 +21,7 @@ class ArticleController extends Controller
     public function index()
     {
         //
-        $article = Article::getNewsArticle(8);
+        $article = Article::getNewsArticle(12);
         viewInit();
         $page = new EndaPage($article['page']);
         return homeView('index', array(

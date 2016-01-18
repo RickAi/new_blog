@@ -19,7 +19,6 @@ class DatabaseSeeder extends Seeder
         $this->call('SystemSeeder');
         $this->call('TagSeeder');
         $this->call('ArticleSeeder');
-        $this->call('CategorySeeder');
 	}
 
 }
