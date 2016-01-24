@@ -14,7 +14,7 @@
                 <h1 class="collection-header">Yogi Ai</h1>
                 <div class="collection-info">
                     <span class="meta-info">
-                        我将遵循此道, 直至终结 - Yasuo.
+                        相信不屈不挠的努力, 相信战胜死亡的年轻.
                     </span>
                 </div>
             </div>
