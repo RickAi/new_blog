@@ -10,6 +10,10 @@ use Illuminate\Http\Request;
 class AboutController extends Controller {
 
 
+    public function showResume(){
+        return redirect('http://yogiai.digitcv.com/');
+    }
+
 	/**
 	 * Display the specified resource.
 	 *

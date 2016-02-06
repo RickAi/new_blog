@@ -12,13 +12,13 @@
 */
 
 Route::get('/', 'ArticleController@index');
+Route::get('/resume', 'AboutController@showResume');
 
 
 Route::resource('article', 'ArticleController');
 Route::resource('comment', 'CommentController');
 Route::resource('category', 'CategoryController');
 Route::resource('about', 'AboutController');
-
 
 Route::controllers([
     'backend/auth' => 'backend\AuthController',
