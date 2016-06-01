@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'ArticleController@index');
-Route::get('/resume', 'AboutController@showResume');
+Route::get('/colortalk', 'AboutController@downloadColorTalk');
 
 
 Route::resource('article', 'ArticleController');
